@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagenes/The Three Musketeers.jpg" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>The Three Musketeers Grow</title>
+    </head>
+    <body>
+        <header class="menu-nav">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../imagenes/the-three-musketeersgrow.png" alt=""></a>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                <nav class="menu-nav-botonera">
+                    <ul class="botonera-menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./parafernalia.html">Parafernalia</a></li>
+                        <li><a href="./mi-cuenta.html">Mi Cuenta</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="botones-ingreso">
+                    <div class="search">
+                        <input type="search" name="buscador" placeholder="Buscar...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="login-buttons">
+                        <a href="./mi-cuenta.html" class="login">Iniciar sesión</a>
+                        <a href="./mi-cuenta.html" class="register">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1 class="contactotitu">Contacto</h1>
+            <form class="contacto">
+                <fieldset class="contacto1">
+                    <legend>Contactanos vía mail</legend>
+                    <div class="nombrecontacto">
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" placeholder="Jhon Doe" required>
+                    </div>
+                    <div class="emailcontacto">
+                        <label for="mail">Correo electronico:</label>
+                        <input type="email" name="correo" placeholder="email@dominio.com" required>
+                    </div>
+                    <div class="tumensaje">
+                        <label for="mensaje">Tu mensaje:</label>
+                        <textarea name="asunto" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <div class="celular">
+                        <label for="celular">Tu celular:</label>
+                        <input type="text" name="celular" placeholder="4444-4444" required>
+                    </div>                    
+                    <input type="submit" value="Enviar">                
+                </fieldset>
+            </form>    
+        </main>
+        <footer class="pie-de-pagina">
+            <div class="footer-container">
+              <div class="copy">&copy;2023 Todos los derechos reservados.</div>
+              <div class="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                  <li>2983344554-2983560945</li>
+                  <li>Lun. a vie. de 10 a 14 hs y de 15 a 19 hs. | Sab. de 12 a 18 hs.</li>
+                  <li>Av. San Martin 276 e. Belgrano y 9 de Julio</li>
+                  <li><a href="./contacto.html">Comunicate vía Mail</a></li>
+                </ul>
+              </div>
+              <div class="redes">
+                <h3>Seguinos</h3>
+                <ul>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Facebook</a></li>
+                </ul>
+              </div>
+              <div class="metodos-pago">
+                <h3>Medios de pago</h3>
+                <ul>
+                  <li><img src="../imagenes/pay-cards.jpg" alt="metodos-de-pago"></li>
+                </ul>
+              </div>
+            </div>
+        </footer> 
+    </body>
+    <script src="https://kit.fontawesome.com/44f5ef950b.js" crossorigin="anonymous"></script>
+</html>
