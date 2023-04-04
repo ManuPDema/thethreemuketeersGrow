@@ -1,4 +1,16 @@
-/* estilos generales*/
+@import "index";
+@import "productos-parafernalia";
+@import "micuenta";
+@import "contacto";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+/* estilos generales */
 
 * {
     padding: 0px;
@@ -6,10 +18,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-/* estilos generales */
 
 body {
     background-color: #1abc9c;
@@ -19,113 +27,157 @@ body {
     background-color: #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-}
-  
-.header-container {
+
+    .header-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-}
-  
-.logo {
-    margin-right: 40px;
-}
+    }
+        .logo {
+        margin-right: 40px;
+        }
+        img {
+        padding: 12px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        }
 
-.logo img {
-    padding: 12px;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-  
-nav {
+    nav {
     flex: 1;
-}
-  
-.botonera-menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-  
-.botonera-menu li {
-    margin-right: 20px;
-}
-  
-.botonera-menu a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-  
-.botonera-menu a:hover {
-    color: #1abc9c;
-  }
-  
-.search {
+    }
+        .botonera-menu {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+            li {
+            margin-right: 20px;
+            }
+            a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            }
+            a:hover {
+            color: #1abc9c;
+            }
+
+    .search {
     display: flex;
     align-items: center;
     border: 2px solid #1abc9c;
     border-radius: 20px;
     padding: 5px;
     margin-right: 20px;
-}
-  
-input[type="search"] {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 5px;
-    width: 260px;
-}
-  
-button[type="submit"] {
-    background-color: transparent;
-    border: none;
-    color: #1abc9c;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin-left: 5px;
-}
-  
-.login-buttons {
+    } 
+        input[type="search"] {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 5px;
+        width: 260px;
+        }
+        button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        color: #1abc9c;
+        cursor: pointer;
+        font-size: 1.2em;
+        margin-left: 5px;
+        }
+
+    .login-buttons {
     display: flex;
+    }   
+        a {
+        text-decoration: none;
+        }
+        .login,
+        .register {
+        background-color: #1abc9c;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        }
+        .login:hover,
+        .register:hover {
+        background-color: #148f77;
+        }
+
+    #menu-toggle {
+        display: none;
+    }
+
 }
 
-.login-buttons a {
-    text-decoration: none;
-}
-  
-.login,
-.register {
-    background-color: #1abc9c;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 10px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-}
-  
-.login:hover,
-.register:hover {
-    background-color: #148f77;
+ 
+.pie-de-pagina {
+    background-color: #000;
+    color: #148f77;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+        .copy {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        }
+        .contacto,
+        .redes,
+        .metodos-pago {
+            flex: 1 1 100%;
+            max-width: 250px;
+            margin-bottom: 10px;
+        }
+            h3 {
+                margin: 0 0 10px;
+                font-size: 18px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+                li {
+                    margin-bottom: 5px;
+                }
+                    a {
+                        color: #1abc9c;
+                        text-decoration: none;
+                    }
+                    img {
+                        max-width: 90%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+
 }
 
-.menu-icon {
-    display: none;
-}
 
-#menu-toggle {
-    display: none;
-}
+
 
 @media screen and (max-width: 768px) {
     .menu-nav-botonera {
@@ -165,8 +217,6 @@ button[type="submit"] {
         display: flex;
     }
 
-    /*productos y parafernalia*/
-
     .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -186,403 +236,4 @@ button[type="submit"] {
     .tarjeta img {
     max-width: 100%; 
     }
-}
-
-.pie-de-pagina {
-    background-color: #000;
-    color: #148f77;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-  
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-  
-.copy {
-    flex: 1 1 100%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-  
-.contacto,
-.redes,
-.metodos-pago {
-    flex: 1 1 100%;
-    max-width: 250px;
-    margin-bottom: 10px;
-}
-  
-.contacto h3,
-.redes h3,
-.metodos-pago h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-}
-  
-.contacto ul,
-.redes ul,
-.metodos-pago ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-  
-.contacto ul li,
-.redes ul li,
-.metodos-pago ul li {
-    margin-bottom: 5px;
-}
-  
-.redes ul li a {
-    color: #1abc9c;
-    text-decoration: none;
-}
-  
-.metodos-pago img {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* estilos del index */
-
-.principal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    margin: 20px;
-}
-
-.somos {
-    width: 100%;
-    max-width: 600px;
-    background-color: #1abc9c;
-    color: #fff;
-    box-sizing: border-box;
-}
-
-.somos h2 {
-    padding: 20px;
-    background-color: #148f77;
-    color: #fff;
-    margin: 0;
-    width: 100vh;
-}
-
-.somos p {
-    padding-top: 9px;
-    font-size: 1.1em;
-}
-
-.encontranos {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    margin-left: 20px;
-    box-sizing: border-box;
-    
-}
-
-.encontranos h2 {
-    padding: 20px;
-    background-color: #148f77;
-    color: #fff;
-    margin: 0;
-}
-
-.encontranos .mapa {
-    height: 280px;
-}
-
-.encontranos iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    padding-top: 9px;
-}
-
-/* productos y parafernalia */
-
-.productos-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-.titulo {
-    font-size: 4rem;
-    color: #000;
-}
-  
-.subtitulo {
-    font-size: 3rem;
-    color: #000;
-    margin-top: 3rem;
-}
-  
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-  
-.tarjeta {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease;
-    max-width: 400px;
-}
-  
-.tarjeta:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-  
-.tarjeta img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-  
-.tarjeta h4 {
-    font-size: 1.5rem;
-    color: #000;
-    margin: 1rem 0;
-}
-  
-.tarjeta p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-  
-.tarjeta a {
-    display: inline-block;
-    background-color: #148f77;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 1rem;
-}
-  
-.tarjeta a:hover {
-    background-color: #1abc9c;
-}
-
-
-/* mi cuenta */
-
-.form-container__iniciar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  form {
-    padding: 10px 0px;
-  }
-  
-  .form-container__iniciar h2 {
-    margin-bottom: 2rem;
-    color: #1abc9c;
-  }
-  
-  .form-container__iniciar form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #000;
-  }
-  
-  input[type="email"],
-  input[type="password"] {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: #f5f5f5;
-    color: #000;
-    width: 100%;
-  }
-  
-  button[type="submit"] {
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #148f77;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #1abc9c;
-  }
-
-
-.form-container__registrar {
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 
-  }
-  
-  .form-container__registrar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    border: none;
-    border-bottom: 2px solid #1abc9c;
-    width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-    color: #000;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .buttons button {
-    background-color: #1abc9c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .buttons button:hover {
-    background-color: #148f77;
-  }
-  
-  .buttons button[type="reset"] {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #1abc9c;
-    transition: all 0.3s ease;
-  }
-  
-  .buttons button[type="reset"]:hover {
-    background-color: #1abc9c;
-    color: #fff;
-  }
-
-
-  /* contacto */
-
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #1abc9c;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.contactotitu {
-    text-align: center;
-    color: #000;
-}
-
-.contacto1 {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nombrecontacto,
-.emailcontacto,
-.tumensaje,
-.celular {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-label {
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    color: #000;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-input[type="submit"] {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #148f77;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #1abc9c;
 }

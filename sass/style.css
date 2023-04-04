@@ -1,246 +1,5 @@
-/* estilos generales*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* estilos generales */
-body {
-  background-color: #1abc9c;
-}
-
-.menu-nav {
-  background-color: #000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
-}
-
-.header-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.logo {
-  margin-right: 40px;
-}
-
-.logo img {
-  padding: 12px;
-  border: 1px solid #000;
-  border-radius: 50%;
-}
-
-nav {
-  flex: 1;
-}
-
-.botonera-menu {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.botonera-menu li {
-  margin-right: 20px;
-}
-
-.botonera-menu a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.botonera-menu a:hover {
-  color: #1abc9c;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  border: 2px solid #1abc9c;
-  border-radius: 20px;
-  padding: 5px;
-  margin-right: 20px;
-}
-
-input[type=search] {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  outline: none;
-  padding: 5px;
-  width: 260px;
-}
-
-button[type=submit] {
-  background-color: transparent;
-  border: none;
-  color: #1abc9c;
-  cursor: pointer;
-  font-size: 1.2em;
-  margin-left: 5px;
-}
-
-.login-buttons {
-  display: flex;
-}
-
-.login-buttons a {
-  text-decoration: none;
-}
-
-.login,
-.register {
-  background-color: #1abc9c;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  margin-right: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-.login:hover,
-.register:hover {
-  background-color: #148f77;
-}
-
-.menu-icon {
-  display: none;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-nav-botonera {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .botonera-menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .botonera-menu li {
-    margin: 10px 0;
-  }
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    color: #1abc9c;
-    font-size: 25px;
-    padding: 0 15px;
-  }
-  #menu-toggle {
-    display: none;
-  }
-  #menu-toggle:checked ~ .menu-nav-botonera {
-    display: flex;
-  }
-  /*productos y parafernalia*/
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjeta {
-    margin: 10px;
-    width: calc(100% - 20px);
-    max-height: 300px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  .tarjeta img {
-    max-width: 100%;
-  }
-}
-.pie-de-pagina {
-  background-color: #000;
-  color: #148f77;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.copy {
-  flex: 1 1 100%;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.contacto,
-.redes,
-.metodos-pago {
-  flex: 1 1 100%;
-  max-width: 250px;
-  margin-bottom: 10px;
-}
-
-.contacto h3,
-.redes h3,
-.metodos-pago h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.contacto ul,
-.redes ul,
-.metodos-pago ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contacto ul li,
-.redes ul li,
-.metodos-pago ul li {
-  margin-bottom: 5px;
-}
-
-.redes ul li a {
-  color: #1abc9c;
-  text-decoration: none;
-}
-
-.metodos-pago img {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 /* estilos del index */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .principal {
   display: flex;
   flex-wrap: wrap;
@@ -248,48 +7,41 @@ button[type=submit] {
   align-items: stretch;
   margin: 20px;
 }
-
-.somos {
+.principal .somos {
   width: 100%;
   max-width: 600px;
   background-color: #1abc9c;
   color: #fff;
   box-sizing: border-box;
 }
-
-.somos h2 {
+.principal h2 {
   padding: 20px;
   background-color: #148f77;
   color: #fff;
   margin: 0;
   width: 100vh;
 }
-
-.somos p {
+.principal p {
   padding-top: 9px;
   font-size: 1.1em;
 }
-
-.encontranos {
+.principal .encontranos {
   width: 100%;
   max-width: 600px;
   height: 450px;
   margin-left: 20px;
   box-sizing: border-box;
 }
-
-.encontranos h2 {
+.principal h2 {
   padding: 20px;
   background-color: #148f77;
   color: #fff;
   margin: 0;
 }
-
-.encontranos .mapa {
+.principal .mapa {
   height: 280px;
 }
-
-.encontranos iframe {
+.principal iframe {
   width: 100%;
   height: 100%;
   border: none;
@@ -565,4 +317,210 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #1abc9c;
+}
+
+/* estilos generales */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #1abc9c;
+}
+
+.menu-nav {
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+.menu-nav .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.menu-nav .logo {
+  margin-right: 40px;
+}
+.menu-nav img {
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.menu-nav nav {
+  flex: 1;
+}
+.menu-nav .botonera-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-nav li {
+  margin-right: 20px;
+}
+.menu-nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu-nav a:hover {
+  color: #1abc9c;
+}
+.menu-nav .search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #1abc9c;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.menu-nav input[type=search] {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 260px;
+}
+.menu-nav button[type=submit] {
+  background-color: transparent;
+  border: none;
+  color: #1abc9c;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+.menu-nav .login-buttons {
+  display: flex;
+}
+.menu-nav a {
+  text-decoration: none;
+}
+.menu-nav .login,
+.menu-nav .register {
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.menu-nav .login:hover,
+.menu-nav .register:hover {
+  background-color: #148f77;
+}
+.menu-nav #menu-toggle {
+  display: none;
+}
+
+.pie-de-pagina {
+  background-color: #000;
+  color: #148f77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.pie-de-pagina .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pie-de-pagina .copy {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pie-de-pagina .contacto,
+.pie-de-pagina .redes,
+.pie-de-pagina .metodos-pago {
+  flex: 1 1 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+.pie-de-pagina h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.pie-de-pagina ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pie-de-pagina li {
+  margin-bottom: 5px;
+}
+.pie-de-pagina a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+.pie-de-pagina img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-nav-botonera {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .botonera-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .botonera-menu li {
+    margin: 10px 0;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #1abc9c;
+    font-size: 25px;
+    padding: 0 15px;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu-nav-botonera {
+    display: flex;
+  }
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta {
+    margin: 10px;
+    width: calc(100% - 20px);
+    max-height: 300px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .tarjeta img {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

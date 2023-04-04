@@ -1,0 +1,53 @@
+/* estilos del index */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 20px;
+
+    .somos {
+        width: 100%;
+        max-width: 600px;
+        background-color: #1abc9c;
+        color: #fff;
+        box-sizing: border-box;
+    }
+        h2 {
+        padding: 20px;
+        background-color: #148f77;
+        color: #fff;
+        margin: 0;
+        width: 100vh;
+        }
+        p {
+            padding-top: 9px;
+            font-size: 1.1em;
+        }
+
+    .encontranos {
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        
+    }
+        h2 {
+            padding: 20px;
+            background-color: #148f77;
+            color: #fff;
+            margin: 0;
+        }
+        .mapa {
+            height: 280px;
+        }
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding-top: 9px;
+            }
+
+}
