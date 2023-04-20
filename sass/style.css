@@ -139,6 +139,61 @@
   background-color: #1abc9c;
 }
 
+.productos.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.productos .titulo {
+  font-size: 2.5rem;
+  color: #148f77;
+}
+.productos .subtitulo {
+  font-size: 1.5rem;
+  color: #1abc9c;
+}
+.productos .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.productos .tarjeta {
+  background-color: #fff;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.productos .tarjeta img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.productos .tarjeta h4 {
+  font-size: 1.25rem;
+  color: #148f77;
+  margin-bottom: 0.5rem;
+}
+.productos .tarjeta p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.productos .tarjeta a {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.productos .tarjeta a:hover {
+  background-color: #28e1bd;
+}
+
 /* mi cuenta */
 .form-container__iniciar {
   display: flex;
@@ -311,7 +366,7 @@ button[type=submit]:hover {
 label {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #000;
+  color: #148f77;
 }
 
 input[type=text],
@@ -497,6 +552,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   h2 {
     max-width: 100%;
   }
@@ -550,6 +608,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
   }
   .tarjeta {
     margin: 10px;

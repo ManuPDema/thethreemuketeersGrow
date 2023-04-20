@@ -8,63 +8,101 @@
         <meta name="keywords" content="Grow, Growshop, Cultivo de plantas, Indoor, Outdoor, Armarios de cultivo, Fertilizantes, Iluminacion LED, Sustratos, Autocultivo, Hidroponia, Accesorios de cultivo, Crecimiento de plantas, Germinacion de semillas, Cannabis">
         <meta name="description" content="¿Tienes alguna pregunta o comentario? ¡Contáctanos! Estamos aquí para ayudarte y escuchar tus comentarios. Completa el formulario y te responderemos pronto.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../sass/style.css">
         <title>The Three Musketeers Grow</title>
     </head>
     <body>
-        <header class="menu-nav">
-            <div class="header-container">
-                <div class="logo">
-                    <a href="../index.html"><img src="../imagenes/the-three-musketeersgrow.png" alt="logo"></a>
-                </div>
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
-                <nav class="menu-nav-botonera">
-                    <ul class="botonera-menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./parafernalia.html">Parafernalia</a></li>
-                        <li><a href="./mi-cuenta.html">Mi Cuenta</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="botones-ingreso">
-                    <div class="search">
-                        <input type="search" name="buscador" placeholder="Buscar...">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+        <header class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../imagenes/the-three-musketeersgrow.png" alt="logo" height="100">
+                </a>
+                <div class="d-flex">
+                    <div class="search me-3">
+                        <form>
+                            <div class="input-group">
+                                <input type="search" name="buscador" placeholder="Buscar..." class="form-control" aria-label="Search">
+                                <button type="submit" class="btn btn-outline-light"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./parafernalia.html">Parafernalia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./mi-cuenta.html">Mi Cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                     <div class="login-buttons">
-                        <a href="./mi-cuenta.html" class="login">Iniciar sesión</a>
-                        <a href="./mi-cuenta.html" class="register">Regístrate</a>
+                        <a href="./mi-cuenta.html" class="btn btn-outline-success me-2">Iniciar sesión</a>
+                        <a href="./mi-cuenta.html" class="btn btn-success">Regístrate</a>
                     </div>
                 </div>
             </div>
         </header>
-        <main>
-            <h1 class="contactotitu">Contacto</h1>
-            <form class="contacto">
-                <fieldset class="contacto1">
-                    <legend>Contactanos vía mail</legend>
-                    <div class="nombrecontacto">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" placeholder="Jhon Doe" required>
+        <section id="contacto" class="bg-dark text-white py-5">
+            <div class="container">
+              <h2 class="text-center mb-5">Contacto</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="nombre" class="form-label">Nombre y Apellido</label>
+                      <input type="text" class="form-control" id="nombre" required>
                     </div>
-                    <div class="emailcontacto">
-                        <label for="mail">Correo electronico:</label>
-                        <input type="email" name="correo" placeholder="email@dominio.com" required>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="email" required>
                     </div>
-                    <div class="tumensaje">
-                        <label for="mensaje">Tu mensaje:</label>
-                        <textarea name="asunto" placeholder="Tu mensaje" required></textarea>
+                    <div class="col-12">
+                      <label for="mensaje" class="form-label">Tu mensaje</label>
+                      <textarea class="form-control" id="mensaje" rows="5" required></textarea>
                     </div>
-                    <div class="celular">
-                        <label for="celular">Tu celular:</label>
-                        <input type="text" name="celular" placeholder="4444-4444" required>
-                    </div>                    
-                    <input type="submit" value="Enviar">                
-                </fieldset>
-            </form>   
-        </main>
+                    <div class="col-md-6">
+                      <label for="telefono" class="form-label">Teléfono</label>
+                      <input type="tel" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="ciudad" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="ciudad" required>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <h3>Datos de contacto</h3>
+                  <p><i class="bi bi-geo-alt-fill me-2"></i> Av. San Martin 276, San Cayetano</p>
+                  <p><i class="bi bi-envelope-fill me-2"></i> ejemplo@correo.com</p>
+                  <p><i class="bi bi-telephone-fill me-2"></i> +54 9 2983 34-4554</p>
+                  <div class="mt-4">
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <a href="#" class="me-4 text-white"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="me-4 text-white"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="me-4 text-white"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         <footer class="pie-de-pagina">
             <div class="footer-container">
               <div class="copy">&copy;2023 Todos los derechos reservados.</div>

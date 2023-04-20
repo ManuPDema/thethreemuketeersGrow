@@ -1,0 +1,71 @@
+$productos-color-primario: #148f77;
+$productos-color-secundario: #1abc9c;
+$productos-color-terciario: #000;
+$productos-color-cuaternario: #fff;
+
+.productos {
+  &.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+    color: $productos-color-primario;
+  }
+  
+  .subtitulo {
+    font-size: 1.5rem;
+    color: $productos-color-secundario;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    
+  }
+  
+  .tarjeta {
+    background-color: $productos-color-cuaternario;
+    border: 1px solid $productos-color-secundario;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    
+    h4 {
+      font-size: 1.25rem;
+      color: $productos-color-primario;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      color: $productos-color-terciario;
+      margin-bottom: 1rem;
+    }
+    
+    a {
+      display: inline-block;
+      background-color: $productos-color-secundario;
+      color: $productos-color-cuaternario;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      
+      &:hover {
+        background-color: lighten($productos-color-secundario, 10%);
+      }
+    }
+  }
+}
