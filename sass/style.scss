@@ -26,7 +26,7 @@ body {
 .menu-nav {
     background-color: #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    padding: 0;
 
     .header-container {
     display: flex;
@@ -178,6 +178,10 @@ body {
 
 @media screen and (max-width: 768px) {
     $transicion: all 0.3s ease-in-out;
+
+    h2 {
+      max-width: 100%;
+    }
   
     .menu-nav-botonera {
       display: none;
@@ -254,3 +258,5 @@ body {
       max-width: 100%;
     }
   }
+
+
